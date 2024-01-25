@@ -1,0 +1,281 @@
+.main_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px 20%;  */
+  height: 100vh;
+  /* width: 100%; */
+}
+
+.main_content_div{
+  max-height: 600px;
+  max-width: 800px;
+  /* min-width: 800px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  /* width: 100%; */
+}
+.change_theme_div{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.search_user_div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input_div, .result_div{
+  border-radius: 15px;
+}
+.input_div{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.input_>input{
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 18px;
+  flex: 1;
+}
+.btn_error_div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn_error_div>button{
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid transparent;
+  padding: 14px 25px;
+  border-radius: 10px;
+}
+.icon_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result_div{
+  flex: 1;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  padding: 20px;
+}
+.result_image_div,.main_result_div{
+  height: 100%;
+}
+
+.result_image_div{
+  width: 20%;
+  min-width: 160px;
+  padding: 10px;
+
+}
+.result_image_div>img{
+  border-radius: 500px;
+  width: 100%;
+}
+.main_result_div{
+  width: 100%;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  flex: 1;
+}
+
+.main_result_div>div{
+  /* height: 100%; */
+  width: 100%;
+}
+.profile_div{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100px; */
+}
+.create_date{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.profile_stats_div{
+  border-radius: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  width: 100%;
+}
+.profile_stats_div>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.profile_stats_div>div>h3{
+  font-size: 22px;
+}
+
+.result_personal_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.result_personal_info>div{
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px;
+  max-width: 200px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.change_theme_btn{
+  display: flex;
+  align-items: center;
+  font-size : 16px;
+  font-weight: 700;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid transparent; 
+}
+
+.mm{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  /* position: relative; */
+}
+.div2{
+  padding-left: 160px ;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 100%;
+}
+
+.input_{
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width:1025px){
+  .div2{
+    padding: 0;
+    justify-content: end;
+  }
+  .main_content_div{
+    min-height: none;
+    min-width: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+  }
+  .create_date{
+    position: relative;
+    margin: 0px;
+  }
+  .profile_div{
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width:825px){
+  .main_content_div{
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width:725px){
+  .main_content_div{
+    padding: 0 30px;
+  }
+}
+
+
+.input_>*{
+  color: white;
+}
+@media screen and (max-width:525px){
+  .result_image_div{
+    min-width: 80px;
+  }
+  .result_personal_info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .profile_stats_div{
+    width: 100%;
+    margin: 0;
+  }
+  .username>h1{
+    font-size: 16px;
+  }
+  .input_div{
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    padding: 0;
+  }
+
+  .btn_error_div{
+    width: 100%;
+  }
+  .btn_error_div>button{
+    width: 100%;
+  }
+
+  .input_{
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 14px;
+  }
+
+  .main_div{
+    align-items: start;
+    /* height: 120vh; */
+    height: 100%;
+    padding: 50px 0 100px 0;
+  }
+
+  .profile_stats_div>div>p{
+    font-size: 12px;
+  }
+  .profile_stats_div>div>h3{
+    font-size: 16px;
+  }
+  .btn_error_div{
+    flex-direction: column;
+  }
+
+}
+

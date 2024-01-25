@@ -1,0 +1,39 @@
+.light{
+  background-color: #F6F8FF;
+}
+.light .input_div,.light .result_div{
+  background-color: #FEFEFE;
+}
+
+.light .btn_error_div>button{
+  color: white;
+  background-color: #0079FF;
+}
+.light .result_div{
+  box-shadow: 0px 16px 30px -10px #4660BB33;
+}
+.light .profile_stats_div{
+  background-color: #F6F8FF;
+}
+.light .profile_stats_div>div{
+  color: #4B6A9B;
+}
+.light .result_text{
+  color: #4B6A9B;
+}
+.light .change_theme_btn{
+  color: #4B6A9B;
+}
+.light .input_>*{
+  color: black;
+}
+@media screen and (max-width:525px){
+  .light .input_div{
+    background-color: transparent;
+  }
+
+  .light .input_{
+    background-color: #FEFEFE;
+  }
+}
+

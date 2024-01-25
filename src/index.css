@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+button{
+  cursor: pointer;
+}
+
+input:focus{
+  outline: none;
+}
+
+.error_message{
+  color: #F74646;
+}
+
+a{
+  text-decoration: none;
+  color: #0079FF;
+}
+
+a:hover{
+  text-decoration: underline;
+}
